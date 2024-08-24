@@ -57,14 +57,22 @@ const ListOfAllRecipes = () => {
           </div>
           <h1 className={styles.titleTextStyle}>List Of All Recipes</h1>
         </div>
-        <input
-          type="text"
-          name="search"
-          placeholder="Search recipe by title"
-          value={searchTerm}
-          onChange={handleSearchChange}
-          className={styles.inputStyles}
-        />
+        <div className={styles.inputAndBtnStyle}>
+          <input
+            type="text"
+            name="search"
+            placeholder="Search recipe by title"
+            value={searchTerm}
+            onChange={handleSearchChange}
+            className={styles.inputStyles}
+          />
+          <button
+            className={styles.addRecipeBtnStyle}
+            onClick={() => navigate("/")}
+          >
+            Add Recipe
+          </button>
+        </div>
       </section>
     );
   };

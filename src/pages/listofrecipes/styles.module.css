@@ -39,6 +39,12 @@
   color: #333;
 }
 
+.inputAndBtnStyle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .inputStyles {
   width: 300px;
   padding: 12px;
@@ -126,7 +132,8 @@
 }
 
 .editBtnStyle,
-.deleteBtnStyle {
+.deleteBtnStyle,
+.addRecipeBtnStyle {
   padding: 12px;
   width: 110px;
   background-color: #ff6347;
@@ -137,7 +144,8 @@
   cursor: pointer;
 }
 
-.editBtnStyle {
+.editBtnStyle,
+.addRecipeBtnStyle {
   background-color: #28a745;
   color: #fff;
 }
@@ -161,6 +169,11 @@
 }
 
 @media screen and (max-width: 549px) {
+  .addRecipeBtnStyle {
+    width: fit-content;
+    white-space: nowrap;
+  }
+
   .inputStyles {
     width: 100%;
   }

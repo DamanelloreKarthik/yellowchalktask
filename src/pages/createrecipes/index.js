@@ -6,7 +6,9 @@ const CreateRecipes = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const recipeToEdit = location.state?.recipeToEdit;
+  const recipeToEdit = location?.state?.recipeToEdit;
+
+  console.log("111", recipeToEdit);
 
   const [recipeData, setRecipeData] = useState({
     title: "",
@@ -56,7 +58,7 @@ const CreateRecipes = () => {
     if (recipeToEdit) {
       // Update existing recipe
       updatedRecipes = existingRecipes.map((recipe) =>
-        recipe.title === recipeToEdit.title ? recipeData : recipe
+        recipe?.title === recipeToEdit?.title ? recipeData : recipe
       );
     } else {
       // Add new recipe
@@ -138,7 +140,7 @@ const CreateRecipes = () => {
         onClick={() => handleValidation()}
         className={styles.createRecipeBtnStyle}
       >
-        Create Recipe
+        {recipeToEdit ? "Edit Recipe" : "Create Recipe"}
       </button>
     );
   };

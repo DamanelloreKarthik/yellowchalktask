@@ -84,3 +84,10 @@
   font-size: 14px;
   margin-top: -8px;
 }
+
+.createRecipeBtnTitleStyle {
+  color: #fff;
+}
+.btnContainerStyle {
+  width: 100%;
+}

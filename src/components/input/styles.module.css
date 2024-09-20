@@ -1,0 +1,70 @@
+.inputContainerStyle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.labelTextStyle {
+  color: var(--darkSlateGray);
+  font: 400 17px/26px "NeueHass-Medium", sans-serif;
+  letter-spacing: -0.008em;
+}
+
+.inputSubContainerStyle {
+  max-width: 208px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  height: 38px;
+  padding: 2px;
+  border: 0.8px solid var(--platinum);
+  border-radius: 2px;
+  background: var(--whiteSmoke);
+}
+
+.inputSubContainerStyle:focus-within {
+  outline: 0.8px solid var(--byzantiumLight);
+}
+
+.imageStyle {
+  cursor: pointer;
+}
+
+.inputStyle {
+  width: 100%;
+  padding: 0px 4px;
+  border: none;
+  outline: none;
+  color: var(--darkSlateGray);
+  font: normal 400 17px/26px "NeueHass-Medium", sans-serif;
+  line-height: normal;
+  background: var(--whiteSmoke);
+  letter-spacing: -0.008em;
+}
+
+.inputStyle::placeholder {
+  font: normal 400 17px/26px "NeueHass-Light", sans-serif;
+  letter-spacing: -0.008em;
+  color: var(--charleStonGreen);
+}
+
+.rightTextStyle,
+.bottomTextStyle {
+  color: var(--darkSlateGray);
+  font: normal 400 14px / normal "NeueHass-Light", sans-serif;
+  cursor: pointer;
+}
+
+.errorMsgTextStyle {
+  color: var(--red);
+  font: normal 400 14px / normal "NeueHass-Medium", sans-serif;
+}
+
+.inputStyle::-webkit-outer-spin-button,
+.inputStyle::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

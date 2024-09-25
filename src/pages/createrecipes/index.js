@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "components/button";
+import { Button } from "components/common/button";
 import { FormDataConstants } from "./formData";
 import { FormDataErrorMessage } from "./errormessage";
 import styles from "./styles.module.css";

@@ -1,10 +1,12 @@
-import { Provider } from "provider/provider";
-import { AppRoutes } from "routes";
+import { Provider } from "providers/provider";
+import RemsPractice from "remspractice";
+import { AppRoutes } from "routes/approutes";
 
 function App() {
   return (
     <Provider>
-      <AppRoutes />
+      {/* <AppRoutes /> */}
+      <RemsPractice />
     </Provider>
   );
 }

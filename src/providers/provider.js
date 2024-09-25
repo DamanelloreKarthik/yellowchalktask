@@ -1,5 +1,5 @@
-const { ConstantsProvider } = require("providers/constantsprovider");
-const { DataProvider } = require("providers/dataprovider");
+const { ConstantsProvider } = require("contexts/constantsprovider");
+const { DataProvider } = require("contexts/dataprovider");
 
 const Provider = ({ children }) => {
   return (
